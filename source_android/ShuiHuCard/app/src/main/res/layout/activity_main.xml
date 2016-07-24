@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cn.jian.shuihucard.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="ReSet"
+        android:id="@+id/main_reset_bt"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+
+        <com.wenchao.cardstack.CardStack
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding = "20dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/main_img"
+            android:layout_gravity="center"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
